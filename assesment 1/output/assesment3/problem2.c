@@ -2,6 +2,9 @@
 int main(){
 int n;
 scanf("%d",&n);
-printf("%d",n<50);
+if(n!=50)
+printf("Success");
+else
+printf("Failure");
 return 0;
 }
