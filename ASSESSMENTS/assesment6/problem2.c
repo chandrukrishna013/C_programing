@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+/* Function to print numbers from 5 to 1 */
+void disp_descend()
+{
+    int i;
+
+    for (i = 5; i >= 1; i--)
+    {
+        printf("%d\n", i);
+    }
+}
+
+int main()
+{
+    disp_descend();   // call the function
+    return 0;
+}
