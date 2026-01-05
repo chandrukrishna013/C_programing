@@ -4,19 +4,18 @@ void disp_interchange_first_last_digit()
 {
     int num, first, last, middle, temp, result;
 
-    scanf("%d", &num);      // get number from user
-
-    last = num % 10;        // last digit
+    scanf("%d", &num);     
+    last = num % 10;        
 
     temp = num;
     while (temp >= 10)
     {
         temp = temp / 10;
     }
-    first = temp;           // first digit
+    first = temp;          
 
-    middle = num / 10;      // remove last digit
-    middle = middle % 100000;   // remove first digit (simple way)
+    middle = num / 10;      
+    middle = middle % 100000;  
 
     result = last;
     result = result * 100000 + middle * 10 + first;
