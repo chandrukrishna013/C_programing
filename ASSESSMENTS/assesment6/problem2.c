@@ -13,6 +13,6 @@ void disp_descend()
 
 int main()
 {
-    disp_descend();   // call the function
+    disp_descend();   
     return 0;
 }

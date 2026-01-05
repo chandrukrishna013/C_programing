@@ -14,11 +14,11 @@ void check_last_digit_odd()
         power = power * 10;
     }
 
-    first = temp;   // first digit
+    first = temp;   
 
-    if (first % 2 != 0)      // if first digit is odd
+    if (first % 2 != 0)      
     {
-        num = num - power;  // subtract 1 from first digit
+        num = num - power;  
     }
 
     printf("%d", num);
