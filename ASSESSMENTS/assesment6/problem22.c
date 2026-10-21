@@ -1,23 +1,27 @@
-#include <stdio.h>
-
-void disp_total_2digit_odd()
-{
-    int n, p, c = 0;
-
-    scanf("%d", &n);
-
-    while (n >= 10)
-    {
-        p = n % 100;
-        if (p % 2 == 1)
-            c++;
-        n = n / 10;
-    }
-
-    printf("%d", c);
-}
-
+#include<stdio.h>
+#include<math.h>
 int main()
 {
-    disp_total_2digit_odd();
+    int i,num,count=0,temp,n,t;
+    scanf("%d",&num);
+    temp=num;
+    int c=0;
+    while(temp!=0)
+    {
+        temp=temp/10;
+        count++;
+    }
+    for(i=count-2;i>=0;i--)
+    {
+        n=num/((int)pow(10,i));
+        t=n%100;
+        printf("%d\n",t);
+        if(t%2!=0)
+        {
+            c++;
+        }
+    }
+    printf("%d",c);
+    
+    
 }
